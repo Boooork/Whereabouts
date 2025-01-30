@@ -1,0 +1,134 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:padding="24dp"
+              android:gravity="center"
+              android:background="@android:color/white">
+
+    <!-- Header with Logo and Title centered -->
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="24dp">
+
+        <ImageView
+                android:src="@drawable/whereabouts_logo"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:contentDescription="Whereabouts Logo"
+                android:layout_marginEnd="16dp"/>
+
+        <TextView
+                android:id="@+id/signInTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Log In"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:textColor="#333"/>
+    </LinearLayout>
+
+    <!-- Email Field -->
+    <EditText
+            android:id="@+id/signInEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded_border"
+            android:textColor="#333"
+            android:textSize="16sp"/>
+
+    <!-- Password Field -->
+    <EditText
+            android:id="@+id/signInPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/rounded_border"
+            android:textColor="#333"
+            android:textSize="16sp"/>
+
+    <!-- Sign In Button -->
+    <Button
+            android:id="@+id/signInButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Log In"
+            android:textColor="#FFF"
+            android:backgroundTint="#0066CC"
+            android:layout_marginBottom="16dp"/>
+
+    <!-- Social Media Logins -->
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Or Log In with"
+            android:textSize="16sp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="16dp"
+            android:textColor="#888"/>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="24dp">
+
+        <!-- Google Button -->
+        <ImageButton
+                android:src="@drawable/google_logo"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:contentDescription="Google Sign-In"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:layout_marginEnd="16dp"/>
+
+        <!-- Facebook Button -->
+        <ImageButton
+                android:src="@drawable/facebook_logo"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:contentDescription="Facebook Sign-In"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:layout_marginEnd="16dp"/>
+
+        <!-- Apple Button -->
+        <ImageButton
+                android:src="@drawable/apple_logo"
+                android:layout_width="55dp"
+                android:layout_height="48dp"
+                android:contentDescription="Apple Sign-In"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:layout_marginEnd="16dp"/>
+
+        <!-- GitHub Button -->
+        <ImageButton
+                android:src="@drawable/github_logo"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:contentDescription="GitHub Sign-In"
+                android:background="?android:attr/selectableItemBackgroundBorderless"/>
+    </LinearLayout>
+
+    <!-- Sign Up Redirect -->
+    <TextView
+            android:id="@+id/signupRedirect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have an account? Sign up here!"
+            android:textColor="#0066CC"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:layout_marginTop="24dp"/>
+</LinearLayout>

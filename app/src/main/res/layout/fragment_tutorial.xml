@@ -1,0 +1,75 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:padding="24dp"
+              android:gravity="center"
+              android:background="@android:color/white">
+
+    <!-- Title of the Tutorial -->
+
+    <!-- Tutorial Image / Illustration -->
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome to Whereabouts!"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#333"
+            android:layout_marginBottom="24dp"/>
+    <ImageView
+            android:id="@+id/tutorialImage"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/tutorial"
+            android:layout_marginBottom="24dp"/>
+
+    <!-- Description of the Feature -->
+    <TextView
+            android:id="@+id/tutorialDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Easily share your location with friends and find others nearby."
+            android:textSize="18sp"
+            android:textColor="#555"
+            android:gravity="center"
+            android:layout_marginBottom="40dp"/>
+
+    <!-- Navigation buttons -->
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+        <!-- Skip Button -->
+        <Button
+                android:id="@+id/skipButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Skip"
+                android:textColor="#0066CC"
+                android:background="?android:attr/selectableItemBackground"
+                android:layout_marginEnd="16dp"/>
+
+        <!-- Next Button -->
+        <Button
+                android:id="@+id/nextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Next"
+                android:textColor="#FFF"
+                android:backgroundTint="#0066CC"/>
+    </LinearLayout>
+
+    <!-- Page Indicator (e.g., "1/5") -->
+    <TextView
+            android:id="@+id/pageIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1/5"
+            android:textSize="16sp"
+            android:textColor="#888"
+            android:gravity="center"
+            android:layout_marginTop="20dp"/>
+</LinearLayout>
