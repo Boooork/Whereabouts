@@ -106,7 +106,7 @@
         <!-- Apple Button -->
         <ImageButton
                 android:src="@drawable/apple_logo"
-                android:layout_width="48dp"
+                android:layout_width="55dp"
                 android:layout_height="48dp"
                 android:contentDescription="Apple Sign-In"
                 android:background="?android:attr/selectableItemBackgroundBorderless"
