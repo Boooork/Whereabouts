@@ -8,24 +8,16 @@
         tools:context=".ui.home.HomeFragment">
 
     <!-- Top Navigation Bar -->
-    <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/primaryColor"
-            app:title="Whereabouts"
-            app:titleTextColor="@android:color/white"
-            app:menu="@menu/home_menu">
 
-        <ImageView
-                android:id="@+id/app_logo"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:src="@drawable/whereabouts_logo"
-                android:layout_gravity="center" />
-    </androidx.appcompat.widget.Toolbar>
+
+
 
     <!-- Profile & Search Bar Section -->
+
+    <!-- Quick Access Tabs -->
+
+    <!-- Tracked Items List -->
+
     <LinearLayout
             android:id="@+id/profile_section"
             android:layout_width="match_parent"
@@ -34,51 +26,49 @@
             android:padding="16dp"
             app:layout_constraintTop_toBottomOf="@id/toolbar"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent">
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0">
 
         <ImageView
                 android:id="@+id/profile_image"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:src="@drawable/ic_profile_placeholder"/>
+                android:src="@drawable/wolverine" />
 
         <TextView
                 android:id="@+id/welcome_message"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Welcome, User!"
-                android:textSize="18sp"
+                android:textSize="14sp"
                 android:textStyle="bold"
                 android:layout_marginStart="12dp" />
 
         <EditText
                 android:id="@+id/search_bar"
-                android:layout_width="0dp"
+                android:layout_width="177dp"
                 android:layout_height="40dp"
                 android:layout_weight="1"
-                android:hint="Search items & devices" />
-
-        <ImageView
-                android:id="@+id/notification_icon"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:src="@drawable/ic_notifications" />
+                android:hint="Search items" />
     </LinearLayout>
 
-    <!-- Quick Access Tabs -->
     <com.google.android.material.tabs.TabLayout
             android:id="@+id/tab_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@id/profile_section">
+            app:layout_constraintTop_toBottomOf="@id/profile_section"
+            tools:layout_editor_absoluteX="0dp"
+            android:layout_marginTop="56dp">
 
-        <com.google.android.material.tabs.TabItem android:text="Devices"/>
-        <com.google.android.material.tabs.TabItem android:text="Items"/>
-        <com.google.android.material.tabs.TabItem android:text="Vehicles"/>
-        <com.google.android.material.tabs.TabItem android:text="Other"/>
+        <com.google.android.material.tabs.TabItem android:text="Devices" />
+
+        <com.google.android.material.tabs.TabItem android:text="Items" />
+
+        <com.google.android.material.tabs.TabItem android:text="Vehicles" />
+
+        <com.google.android.material.tabs.TabItem android:text="Other" />
     </com.google.android.material.tabs.TabLayout>
 
-    <!-- Tracked Items List -->
     <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recycler_tracked_items"
             android:layout_width="match_parent"
@@ -111,4 +101,13 @@
                 android:layout_height="wrap_content"
                 android:text="Report Lost Item" />
     </LinearLayout>
+
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:text="Find Your Belongings!"
+            android:id="@+id/editTextText"
+            tools:layout_editor_absoluteY="82dp"
+            tools:layout_editor_absoluteX="115dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
