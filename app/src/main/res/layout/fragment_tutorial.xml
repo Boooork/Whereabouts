@@ -47,7 +47,7 @@
                 android:id="@+id/skipButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Skip"
+                android:text="@string/skip"
                 android:textColor="#0066CC"
                 android:background="?android:attr/selectableItemBackground"
                 android:layout_marginEnd="16dp"/>
@@ -57,9 +57,11 @@
                 android:id="@+id/nextButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Next"
+                android:text="@string/next"
                 android:textColor="#FFF"
-                android:backgroundTint="#0066CC"/>
+                android:backgroundTint="#0066CC"
+
+            />
     </LinearLayout>
 
     <!-- Page Indicator (e.g., "1/5") -->
