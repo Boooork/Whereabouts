@@ -6,7 +6,14 @@
     <string name="second_fragment_label">Second Fragment</string>
     <string name="next">Next</string>
     <string name="skip">Skip</string>
+    <string name="welcome">Welcome to Whereabouts!</string>
+    <string name="description">Easily share your location with friends and find others nearby.</string>
+    <string name="one_five">1/5</string>
+    <string name="Login">Log In</string>
     <string name="previous">Previous</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="orLogin">Or Login With</string>
 
     <string name="lorem_ipsum">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris volutpat, dolor id
