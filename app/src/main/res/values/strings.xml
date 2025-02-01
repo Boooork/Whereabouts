@@ -14,6 +14,9 @@
     <string name="email">Email</string>
     <string name="password">Password</string>
     <string name="orLogin">Or Login With</string>
+    <string name="createAccount">Create Account</string>
+    <string name="username">Username</string>
+    <string name="signup">Sign Up</string>
 
     <string name="lorem_ipsum">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris volutpat, dolor id
