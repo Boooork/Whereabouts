@@ -36,13 +36,13 @@
                 android:src="@drawable/wolverine" />
 
         <TextView
-                android:id="@+id/welcome_message"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Welcome, User!"
-                android:textSize="14sp"
-                android:textStyle="bold"
-                android:layout_marginStart="12dp" />
+            android:id="@+id/welcome_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:text="Welcome, User!"
+            android:textSize="14sp"
+            android:textStyle="bold" />
 
         <EditText
                 android:id="@+id/search_bar"
