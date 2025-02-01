@@ -9,33 +9,36 @@
     <!-- Title of the Tutorial -->
 
     <!-- Tutorial Image / Illustration -->
-    <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Welcome to Whereabouts!"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            android:textColor="#333"
-            android:layout_marginBottom="24dp"/>
-    <ImageView
-            android:id="@+id/tutorialImage"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            android:src="@drawable/tutorial"
-            android:layout_marginBottom="24dp"/>
 
     <!-- Description of the Feature -->
-    <TextView
-            android:id="@+id/tutorialDescription"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Easily share your location with friends and find others nearby."
-            android:textSize="18sp"
-            android:textColor="#555"
-            android:gravity="center"
-            android:layout_marginBottom="40dp"/>
 
     <!-- Navigation buttons -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="Welcome to Whereabouts!"
+        android:textColor="#333"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/tutorialImage"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="24dp"
+        android:src="@drawable/tutorial" />
+
+    <TextView
+        android:id="@+id/tutorialDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:gravity="center"
+        android:text="Easily share your location with friends and find others nearby."
+        android:textColor="#555"
+        android:textSize="18sp" />
+
     <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
