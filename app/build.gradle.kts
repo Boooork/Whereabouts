@@ -47,6 +47,7 @@ dependencies {
     implementation(libs.androidx.navigation.ui.ktx)
     implementation(libs.androidx.activity)
     implementation(libs.firebase.firestore)
+    implementation(libs.firebase.storage)
     //implementation(libs.androidx.annotation)
     //implementation(libs.androidx.lifecycle.livedata.ktx)
     //implementation(libs.androidx.lifecycle.viewmodel.ktx)
