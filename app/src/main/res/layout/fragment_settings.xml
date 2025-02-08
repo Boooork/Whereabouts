@@ -61,8 +61,12 @@
                     android:id="@+id/edit_profile"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:minHeight="48dp"
+                    android:gravity="center_vertical"
                     android:text="Edit Profile"
                     android:textSize="14sp"
+                    android:background="?attr/selectableItemBackground"
+                    android:padding="8dp"/>
             </LinearLayout>
         </LinearLayout>
 
@@ -75,7 +79,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Privacy & Security"
+            android:text="Privacy &amp; Security"
             android:textSize="16sp"
             android:textStyle="bold"
             android:layout_marginBottom="8dp"/>
@@ -84,6 +88,8 @@
             android:id="@+id/location_toggle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:gravity="center_vertical"
             android:text="Share Location"
             android:checked="true"/>
 
@@ -91,6 +97,8 @@
             android:id="@+id/enable_2fa"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:gravity="center_vertical"
             android:text="Enable Two-Factor Authentication"
             android:checked="false"/>
 
@@ -98,6 +106,8 @@
             android:id="@+id/manage_blocked_users"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:gravity="center_vertical"
             android:text="Manage Blocked Users"
             android:padding="8dp"
             android:background="?attr/selectableItemBackground"/>
@@ -115,6 +125,8 @@
             android:id="@+id/push_notifications"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:gravity="center_vertical"
             android:text="Enable Push Notifications"
             android:checked="true"/>
 
@@ -122,22 +134,17 @@
             android:id="@+id/sound_notifications"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:gravity="center_vertical"
             android:text="Enable Notification Sounds"
             android:checked="true"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="App Preferences"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="8dp"/>
 
         <TextView
             android:id="@+id/theme_selection"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:gravity="center_vertical"
             android:text="Theme: Light Mode"
             android:padding="8dp"
             android:background="?attr/selectableItemBackground"/>
@@ -146,32 +153,9 @@
             android:id="@+id/language_selection"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:gravity="center_vertical"
             android:text="Language: English"
-            android:padding="8dp"
-            android:background="?attr/selectableItemBackground"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Help & Support"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="8dp"/>
-
-        <TextView
-            android:id="@+id/faqs"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="FAQs"
-            android:padding="8dp"
-            android:background="?attr/selectableItemBackground"/>
-
-        <TextView
-            android:id="@+id/contact_support"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Contact Support"
             android:padding="8dp"
             android:background="?attr/selectableItemBackground"/>
 
@@ -179,6 +163,7 @@
             android:id="@+id/logout_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:minHeight="48dp"
             android:text="Logout"
             android:textColor="@android:color/white"
             android:layout_marginTop="16dp"/>
@@ -187,11 +172,11 @@
             android:id="@+id/delete_account"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:gravity="center"
             android:text="Delete Account"
             android:textColor="@android:color/holo_red_dark"
-            android:gravity="center"
             android:padding="8dp"
-            android:layout_marginTop="8dp"
             android:background="?attr/selectableItemBackground"/>
     </LinearLayout>
 </ScrollView>
