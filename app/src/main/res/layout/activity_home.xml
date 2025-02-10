@@ -5,17 +5,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.home.HomeFragment">
+    >
 
     <!-- Top Navigation Bar -->
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/primaryColor"
+        
         app:title="Whereabouts"
         app:titleTextColor="@android:color/white"
-        app:menu="@menu/home_menu">
+       >
 
         <ImageView
             android:id="@+id/app_logo"
@@ -40,7 +40,7 @@
             android:id="@+id/profile_image"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:src="@drawable/ic_profile_placeholder"/>
+            />
 
         <TextView
             android:id="@+id/welcome_message"
@@ -62,7 +62,7 @@
             android:id="@+id/notification_icon"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:src="@drawable/ic_notifications" />
+            />
     </LinearLayout>
 
     <!-- Quick Access Tabs -->
@@ -72,10 +72,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/profile_section">
 
-        <com.google.android.material.tabs.TabItem android:text="Devices"/>
-        <com.google.android.material.tabs.TabItem android:text="Items"/>
-        <com.google.android.material.tabs.TabItem android:text="Vehicles"/>
-        <com.google.android.material.tabs.TabItem android:text="Other"/>
+        
     </com.google.android.material.tabs.TabLayout>
 
     <!-- Tracked Items List -->
@@ -98,7 +95,7 @@
         <TextView
             android:text="Recent Alerts"
             android:textSize="16sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"  android:layout_height="wrap_content" android:layout_width="wrap_content"/>
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recycler_alerts"
