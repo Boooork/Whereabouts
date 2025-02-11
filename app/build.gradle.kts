@@ -48,6 +48,7 @@ dependencies {
     implementation(libs.androidx.activity)
     implementation(libs.firebase.firestore)
     implementation(libs.firebase.storage)
+    implementation(libs.firebase.auth)
     //implementation(libs.androidx.annotation)
     //implementation(libs.androidx.lifecycle.livedata.ktx)
     //implementation(libs.androidx.lifecycle.viewmodel.ktx)
