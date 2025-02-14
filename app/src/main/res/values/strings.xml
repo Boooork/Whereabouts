@@ -50,4 +50,8 @@
     </string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="welcome_user">Welcome, User!</string>
+    <string name="search_items_devices">Search items / devices</string>
+    <string name="recent_alerts">Recent Alerts</string>
+    <string name="report_lost_item">Report Lost Item</string>
 </resources>

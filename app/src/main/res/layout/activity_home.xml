@@ -46,7 +46,7 @@
             android:id="@+id/welcome_message"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Welcome, User!"
+            android:text="@string/welcome_user"
             android:textSize="18sp"
             android:textStyle="bold"
             android:layout_marginStart="12dp" />
@@ -56,7 +56,7 @@
             android:layout_width="0dp"
             android:layout_height="40dp"
             android:layout_weight="1"
-            android:hint="Search items / devices" />
+            android:hint="@string/search_items_devices" />
 
         <ImageView
             android:id="@+id/notification_icon"
@@ -93,7 +93,7 @@
         app:layout_constraintBottom_toBottomOf="parent">
 
         <TextView
-            android:text="Recent Alerts"
+            android:text="@string/recent_alerts"
             android:textSize="16sp"
             android:textStyle="bold"  android:layout_height="wrap_content" android:layout_width="wrap_content"/>
 
@@ -106,6 +106,6 @@
             android:id="@+id/btn_report_lost"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Report Lost Item" />
+            android:text="@string/report_lost_item" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
