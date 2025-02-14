@@ -13,14 +13,6 @@
         android:title="Whereabouts"
         android:titleTextColor="@android:color/white" />
 
-    <!-- Map Fragment below the Toolbar -->
-    <fragment
-        android:id="@+id/map"
-        android:layout_below="@id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        class="com.google.android.gms.maps.SupportMapFragment" />
-
     <!-- Back to Home Button -->
     <Button
         android:id="@+id/btnBackToHome"
@@ -30,16 +22,5 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="16dp" />
-
-    <!-- Floating Action Button for recentering the map -->
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fabCenter"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_my_location"
-        app:backgroundTint="?attr/colorPrimary"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:layout_margin="16dp" />
 
 </RelativeLayout>

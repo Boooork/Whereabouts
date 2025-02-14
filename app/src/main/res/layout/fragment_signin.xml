@@ -21,14 +21,6 @@
                 android:contentDescription="Whereabouts Logo"
                 android:layout_marginEnd="16dp"/>
 
-        <TextView
-                android:id="@+id/signInTitle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Log In"
-                android:textSize="28sp"
-                android:textStyle="bold"
-                android:textColor="#333"/>
     </LinearLayout>
 
     <!-- Email Field -->
@@ -87,7 +79,7 @@
 
         <!-- Google Button -->
         <ImageButton
-                android:src="@drawable/google_logo"
+                android:src="@drawable/apple_logo"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:contentDescription="Google Sign-In"
@@ -96,7 +88,7 @@
 
         <!-- Facebook Button -->
         <ImageButton
-                android:src="@drawable/facebook_logo"
+                android:src="@drawable/apple_logo"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:contentDescription="Facebook Sign-In"
@@ -114,7 +106,7 @@
 
         <!-- GitHub Button -->
         <ImageButton
-                android:src="@drawable/github_logo"
+                android:src="@drawable/apple_logo"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:contentDescription="GitHub Sign-In"
