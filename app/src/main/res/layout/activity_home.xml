@@ -1,39 +1,27 @@
-<?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context=".ui.home.HomeFragment">
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
 
     <!-- Top Navigation Bar -->
-
-
-
-
-    <!-- Profile & Search Bar Section -->
-
-    <!-- Quick Access Tabs -->
-
-    <!-- Tracked Items List -->
-
     <LinearLayout
-            android:id="@+id/profile_section"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:padding="16dp"
-            app:layout_constraintTop_toBottomOf="@id/toolbar"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0">
+        android:id="@+id/profile_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
 
         <ImageView
-                android:id="@+id/profile_image"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:src="@drawable/wolverine" />
+            android:id="@+id/profile_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/wolverine" />
 
         <TextView
             android:id="@+id/welcome_message"
@@ -45,69 +33,178 @@
             android:textStyle="bold" />
 
         <EditText
-                android:id="@+id/search_bar"
-                android:layout_width="177dp"
-                android:layout_height="40dp"
-                android:layout_weight="1"
-                android:hint="Search items" />
+            android:id="@+id/search_bar"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:hint="Search items" />
     </LinearLayout>
+
+    <!-- Devices Images Container with Scroll View -->
 
     <com.google.android.material.tabs.TabLayout
-            android:id="@+id/tab_layout"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@id/profile_section"
-            tools:layout_editor_absoluteX="0dp"
-            android:layout_marginTop="56dp">
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        app:layout_constraintTop_toBottomOf="@id/profile_section"
+        app:tabMode="fixed"
+        tools:layout_editor_absoluteX="0dp">
 
-        <com.google.android.material.tabs.TabItem android:text="Devices" />
-
-        <com.google.android.material.tabs.TabItem android:text="Items" />
-
-        <com.google.android.material.tabs.TabItem android:text="Vehicles" />
-
-        <com.google.android.material.tabs.TabItem android:text="Other" />
-    </com.google.android.material.tabs.TabLayout>
-
-    <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recycler_tracked_items"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            app:layout_constraintTop_toBottomOf="@id/tab_layout"
-            app:layout_constraintBottom_toTopOf="@id/alerts_section"/>
-
-    <!-- Alerts & Community Proximity Forum -->
-    <LinearLayout
-            android:id="@+id/alerts_section"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            app:layout_constraintTop_toBottomOf="@id/recycler_tracked_items"
-            app:layout_constraintBottom_toBottomOf="parent">
-
-        <TextView
-                android:text="Recent Alerts"
-                android:textSize="16sp"
-                android:textStyle="bold" />
-
-        <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/recycler_alerts"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-
-        <Button
-                android:id="@+id/btn_report_lost"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Report Lost Item" />
-    </LinearLayout>
-
-    <EditText
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tab_devices"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:inputType="text"
-            android:text="Find Your Belongings!"
-            android:id="@+id/editTextText"
-            tools:layout_editor_absoluteY="82dp"
-            tools:layout_editor_absoluteX="115dp" />
+            android:text="Devices" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tab_items"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Items" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tab_vehicles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vehicles" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tab_other"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Other" />
+    </com.google.android.material.tabs.TabLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/devices_images_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@id/tab_layout">
+
+        <LinearLayout
+            android:id="@+id/devices_images_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:gravity="center"
+            android:weightSum="5">
+
+            <!-- Car Logo -->
+            <ImageView
+                android:id="@+id/car_logo"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/car_logo"
+                android:contentDescription="Car Logo"
+                android:layout_gravity="center"
+                android:background="@drawable/border"
+                android:padding="12dp"/>
+
+            <!-- Phone Logo -->
+            <ImageView
+                android:id="@+id/phone_logo"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/phone"
+                android:contentDescription="Phone Logo"
+                android:layout_gravity="center"
+                android:background="@drawable/border"
+                android:padding="12dp"/>
+
+            <!-- Watch Logo -->
+
+            <!-- AirTag Logo -->
+            <ImageView
+                android:id="@+id/watch_logo"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/border"
+                android:contentDescription="Watch Logo"
+                android:padding="12dp"
+                android:src="@drawable/watch" />
+
+            <ImageView
+                android:id="@+id/airtag_logo"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/airtag_logo"
+                android:contentDescription="AirTag Logo"
+                android:layout_gravity="center"
+                android:background="@drawable/border"
+                android:padding="12dp"/>
+
+            <!-- Add Item Icon -->
+            <ImageView
+                android:id="@+id/add_item_logo"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/add_item_logo"
+                android:contentDescription="Add Item Logo"
+                android:layout_gravity="center"
+                android:background="@drawable/border"
+                android:padding="12dp"/>
+
+            <EditText
+                android:id="@+id/editTextText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:minHeight="48dp"
+                android:text="Find Your Belongings!" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <!-- RecyclerView for Tracked Items (Device Items) -->
+
+    <!-- Add Item Button -->
+
+    <!-- Alerts & Community Proximity Forum -->
+
+    <LinearLayout
+        android:id="@+id/alerts_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="328dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_add_item"
+        tools:layout_editor_absoluteX="0dp">
+
+        <!-- RecyclerView to display alerts -->
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_alerts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="437dp" />
+
+    <TextView
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:text="Recent Alerts"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="-3dp"
+        tools:layout_editor_absoluteY="407dp" />
+
+    <Button
+        android:id="@+id/btn_report_lost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Report Lost Item"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="334dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
