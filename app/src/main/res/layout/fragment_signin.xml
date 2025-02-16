@@ -25,7 +25,7 @@
                 android:id="@+id/signInTitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Log In"
+                android:text="@string/Login"
                 android:textSize="28sp"
                 android:textStyle="bold"
                 android:textColor="#333"/>
@@ -36,11 +36,11 @@
             android:id="@+id/signInEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Email"
+            android:hint="@string/email"
             android:inputType="textEmailAddress"
             android:padding="12dp"
             android:layout_marginBottom="16dp"
-            android:background="@drawable/rounded_border"
+
             android:textColor="#333"
             android:textSize="16sp"/>
 
@@ -49,11 +49,11 @@
             android:id="@+id/signInPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Password"
+            android:hint="@string/password"
             android:inputType="textPassword"
             android:padding="12dp"
             android:layout_marginBottom="24dp"
-            android:background="@drawable/rounded_border"
+
             android:textColor="#333"
             android:textSize="16sp"/>
 
@@ -62,7 +62,7 @@
             android:id="@+id/signInButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Log In"
+            android:text="@string/Login"
             android:textColor="#FFF"
             android:backgroundTint="#0066CC"
             android:layout_marginBottom="16dp"/>
@@ -72,7 +72,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="Or Log In with"
+            android:text="@string/orLogin"
             android:textSize="16sp"
             android:layout_marginTop="24dp"
             android:layout_marginBottom="16dp"
@@ -87,7 +87,7 @@
 
         <!-- Google Button -->
         <ImageButton
-                android:src="@drawable/google_logo"
+
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:contentDescription="Google Sign-In"
@@ -96,7 +96,7 @@
 
         <!-- Facebook Button -->
         <ImageButton
-                android:src="@drawable/facebook_logo"
+
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:contentDescription="Facebook Sign-In"
@@ -114,7 +114,7 @@
 
         <!-- GitHub Button -->
         <ImageButton
-                android:src="@drawable/github_logo"
+
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:contentDescription="GitHub Sign-In"

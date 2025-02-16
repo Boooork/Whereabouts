@@ -25,7 +25,7 @@
                 android:id="@+id/signUpTitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Create Account"
+                android:text="@string/createAccount"
                 android:textSize="28sp"
                 android:textStyle="bold"
                 android:textColor="#333"/>
@@ -36,11 +36,11 @@
             android:id="@+id/signUpUsername"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Username"
+            android:hint="@string/username"
             android:inputType="textPersonName"
             android:padding="12dp"
             android:layout_marginBottom="16dp"
-            android:background="@drawable/rounded_border"
+
             android:textColor="#333"
             android:textSize="16sp"/>
 
@@ -49,11 +49,11 @@
             android:id="@+id/signUpEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Email"
+            android:hint="@string/email"
             android:inputType="textEmailAddress"
             android:padding="12dp"
             android:layout_marginBottom="16dp"
-            android:background="@drawable/rounded_border"
+
             android:textColor="#333"
             android:textSize="16sp"/>
 
@@ -62,11 +62,11 @@
             android:id="@+id/signUpPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Password"
+            android:hint="@string/password"
             android:inputType="textPassword"
             android:padding="12dp"
             android:layout_marginBottom="24dp"
-            android:background="@drawable/rounded_border"
+
             android:textColor="#333"
             android:textSize="16sp"/>
 
@@ -75,7 +75,7 @@
             android:id="@+id/signUpButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Sign Up"
+            android:text="@string/signup"
             android:textColor="#FFF"
             android:backgroundTint="#0066CC"
             android:layout_marginBottom="16dp"/>
@@ -100,7 +100,7 @@
 
         <!-- Google Button -->
         <ImageButton
-                android:src="@drawable/google_logo"
+
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:contentDescription="Google Sign-In"
@@ -109,7 +109,7 @@
 
         <!-- Facebook Button -->
         <ImageButton
-                android:src="@drawable/facebook_logo"
+
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:contentDescription="Facebook Sign-In"
@@ -127,7 +127,7 @@
 
         <!-- GitHub Button -->
         <ImageButton
-                android:src="@drawable/github_logo"
+
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:contentDescription="GitHub Sign-In"

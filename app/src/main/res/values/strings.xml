@@ -5,7 +5,18 @@
     <string name="first_fragment_label">First Fragment</string>
     <string name="second_fragment_label">Second Fragment</string>
     <string name="next">Next</string>
+    <string name="skip">Skip</string>
+    <string name="welcome">Welcome to Whereabouts!</string>
+    <string name="description">Easily share your location with friends and find others nearby.</string>
+    <string name="one_five">1/5</string>
+    <string name="Login">Log In</string>
     <string name="previous">Previous</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="orLogin">Or Login With</string>
+    <string name="createAccount">Create Account</string>
+    <string name="username">Username</string>
+    <string name="signup">Sign Up</string>
 
     <string name="lorem_ipsum">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris volutpat, dolor id
@@ -39,4 +50,8 @@
     </string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="welcome_user">Welcome, User!</string>
+    <string name="search_items_devices">Search items / devices</string>
+    <string name="recent_alerts">Recent Alerts</string>
+    <string name="report_lost_item">Report Lost Item</string>
 </resources>
