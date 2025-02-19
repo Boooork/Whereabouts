@@ -1,40 +1,36 @@
 package com.example.myapplication
 
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.navigation.fragment.findNavController
 import com.example.myapplication.databinding.FragmentFirstBinding
+import androidx.navigation.fragment.findNavController
 
-/**
- * A simple [Fragment] subclass as the default destination in the navigation.
- */
+
 class FirstFragment : Fragment() {
-
     private var _binding: FragmentFirstBinding? = null
-
-    // This property is only valid between onCreateView and
-    // onDestroyView.
     private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View {
-
+    ): View? {
         _binding = FragmentFirstBinding.inflate(inflater, container, false)
         return binding.root
-
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.buttonFirst.setOnClickListener {
-            findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
-        }
+        // Use a Handler to delay navigation for 2-3 seconds
+        Handler(Looper.getMainLooper()).postDelayed({
+            // Navigate to the sign-up screen after the delay
+            findNavController().navigate(R.id.action_firstFragment_to_signupFragment)
+        }, 3000) // 3000ms = 3 seconds
     }
 
     override fun onDestroyView() {
