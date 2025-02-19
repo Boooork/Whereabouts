@@ -4,6 +4,7 @@ import android.content.ContentValues.TAG
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
+import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import android.widget.TextView
 import android.widget.Toast
@@ -28,6 +29,13 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, SignInActivity::class.java)
             startActivity(intent)
         }
+
+        val clickSignUp = findViewById<Button>(R.id.signUpButton)
+        clickSignUp.setOnClickListener{
+            val intent = Intent(this, ForumBoard::class.java)
+            startActivity(intent)
+        }
+
     }
 
 
