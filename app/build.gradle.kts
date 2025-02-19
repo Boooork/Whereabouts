@@ -1,17 +1,18 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
-    //alias(libs.plugins.google.android.libraries.mapsplatform.secrets.gradle.plugin)
+    alias(libs.plugins.google.gms.google.services)
+
 }
 
 android {
     namespace = "com.example.myapplication"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.example.myapplication"
-        minSdk = 24
-        targetSdk = 34
+        minSdk = 23
+        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
 
@@ -25,11 +26,11 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_11
+        targetCompatibility = JavaVersion.VERSION_11
     }
     kotlinOptions {
-        jvmTarget = "1.8"
+        jvmTarget = "11"
     }
     buildFeatures {
         viewBinding = true
@@ -37,8 +38,7 @@ android {
 }
 
 dependencies {
-    //implementation("com.google.android.gms:play-services-maps:18.1.0")
-   // implementation("com.google.android.gms:play-services-location:21.0.1") // For user location
+
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
@@ -46,11 +46,31 @@ dependencies {
     implementation(libs.androidx.navigation.fragment.ktx)
     implementation(libs.androidx.navigation.ui.ktx)
     implementation(libs.androidx.activity)
-    // implementation(libs.androidx.annotation)
-   // implementation(libs.androidx.lifecycle.livedata.ktx)
-   // implementation(libs.androidx.lifecycle.viewmodel.ktx)
-   // implementation(libs.play.services.maps)
+
+
+    // Import the BoM for the Firebase platform
+   // implementation(libs.firebase.auth)
+
+// Import the BoM for the Firebase platform
+    implementation(platform(libs.firebase.bom))
+
+    // Add the dependency for the Firebase Authentication library
+    // When using the BoM, you don't specify versions in Firebase library dependencies
+    implementation(libs.com.google.firebase.firebase.auth)
+
+
+
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
+
+
+                     //IF ANY LINKING ERRORS OCCUR, CHECK THIS IMP.
+    //implementation(libs.kotlinx.coroutines.play.services)
+
+    //implementation(libs.kotlinx.coroutines.core)
+    //implementation(libs.kotlinx.corounties.android)
+
 }
