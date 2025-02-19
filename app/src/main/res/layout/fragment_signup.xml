@@ -40,7 +40,6 @@
             android:inputType="textPersonName"
             android:padding="12dp"
             android:layout_marginBottom="16dp"
-            android:background="@drawable/rounded_border"
             android:textColor="#333"
             android:textSize="16sp"/>
 
@@ -53,7 +52,6 @@
             android:inputType="textEmailAddress"
             android:padding="12dp"
             android:layout_marginBottom="16dp"
-            android:background="@drawable/rounded_border"
             android:textColor="#333"
             android:textSize="16sp"/>
 
@@ -66,7 +64,6 @@
             android:inputType="textPassword"
             android:padding="12dp"
             android:layout_marginBottom="24dp"
-            android:background="@drawable/rounded_border"
             android:textColor="#333"
             android:textSize="16sp"/>
 
@@ -100,7 +97,7 @@
 
         <!-- Google Button -->
         <ImageButton
-                android:src="@drawable/google_logo"
+                android:src="@drawable/apple_logo"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:contentDescription="Google Sign-In"
@@ -109,7 +106,7 @@
 
         <!-- Facebook Button -->
         <ImageButton
-                android:src="@drawable/facebook_logo"
+                android:src="@drawable/apple_logo"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:contentDescription="Facebook Sign-In"
@@ -127,7 +124,7 @@
 
         <!-- GitHub Button -->
         <ImageButton
-                android:src="@drawable/github_logo"
+                android:src="@drawable/apple_logo"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:contentDescription="GitHub Sign-In"
