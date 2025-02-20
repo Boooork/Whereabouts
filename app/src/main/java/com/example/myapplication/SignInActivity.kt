@@ -14,7 +14,7 @@ class SignInActivity : AppCompatActivity() {
 
         val signIntoUp = findViewById<TextView>(R.id.signupRedirect)
         signIntoUp.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, SignUpActivity::class.java)
             startActivity(intent)
         }
 

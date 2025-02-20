@@ -1,28 +1,25 @@
 package com.example.myapplication
 
-import android.content.ContentValues.TAG
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import android.widget.TextView
-import android.widget.Toast
-import com.google.android.material.textfield.TextInputEditText
-import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.auth.FirebaseUser
-import com.google.firebase.auth.ktx.auth
-import com.google.firebase.ktx.Firebase
 
-class MainActivity : AppCompatActivity() {
+//import com.google.firebase.auth.FirebaseAuth
+//import com.google.firebase.auth.FirebaseUser
+//import com.google.firebase.auth.ktx.auth
+//import com.google.firebase.ktx.Firebase
 
-    private lateinit var auth: FirebaseAuth
+class SignUpActivity : AppCompatActivity() {
+
+    //private lateinit var auth: FirebaseAuth
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.fragment_signup)
 
-        auth = Firebase.auth
+        //auth = Firebase.auth
 
         val signUptoIn = findViewById<TextView>(R.id.signInRedirect)
         signUptoIn.setOnClickListener{
