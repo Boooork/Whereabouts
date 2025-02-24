@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.home.com.example.myapplication.ui.login.HomeFragment">
+   >
 
     <!-- Top Navigation Bar -->
     <LinearLayout
@@ -21,6 +21,7 @@
             android:id="@+id/profile_image"
             android:layout_width="50dp"
             android:layout_height="50dp"
+            android:importantForAccessibility="no"
             android:src="@drawable/wolverine" />
 
         <TextView
@@ -28,7 +29,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="12dp"
-            android:text="Welcome, User!"
+            android:text="@string/welcome_user"
             android:textSize="14sp"
             android:textStyle="bold" />
 
@@ -37,7 +38,10 @@
             android:layout_width="0dp"
             android:layout_height="48dp"
             android:layout_weight="1"
-            android:hint="Search items" />
+            android:hint="@string/search_items"
+            android:importantForAutofill="no"
+            android:textColorHint="#546E7A"
+            tools:ignore="TextFields" />
     </LinearLayout>
 
     <!-- Devices Images Container with Scroll View -->
@@ -55,25 +59,25 @@
             android:id="@+id/tab_devices"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Devices" />
+            android:text="@string/devices" />
 
         <com.google.android.material.tabs.TabItem
             android:id="@+id/tab_items"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Items" />
+            android:text="@string/items" />
 
         <com.google.android.material.tabs.TabItem
             android:id="@+id/tab_vehicles"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Vehicles" />
+            android:text="@string/vehicles" />
 
         <com.google.android.material.tabs.TabItem
             android:id="@+id/tab_other"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Other" />
+            android:text="@string/other" />
     </com.google.android.material.tabs.TabLayout>
 
     <HorizontalScrollView
@@ -99,7 +103,7 @@
                 android:layout_height="120dp"
                 android:layout_marginEnd="16dp"
                 android:src="@drawable/car_logo"
-                android:contentDescription="Car Logo"
+                android:contentDescription="@string/car_logo"
                 android:layout_gravity="center"
                 android:background="@drawable/border"
                 android:padding="12dp"/>
@@ -111,7 +115,7 @@
                 android:layout_height="120dp"
                 android:layout_marginEnd="16dp"
                 android:src="@drawable/phone"
-                android:contentDescription="Phone Logo"
+                android:contentDescription="@string/phone_logo"
                 android:layout_gravity="center"
                 android:background="@drawable/border"
                 android:padding="12dp"/>
@@ -126,7 +130,7 @@
                 android:layout_gravity="center"
                 android:layout_marginEnd="16dp"
                 android:background="@drawable/border"
-                android:contentDescription="Watch Logo"
+                android:contentDescription="@string/watch_logo"
                 android:padding="12dp"
                 android:src="@drawable/watch" />
 
@@ -136,7 +140,7 @@
                 android:layout_height="120dp"
                 android:layout_marginEnd="16dp"
                 android:src="@drawable/airtag_logo"
-                android:contentDescription="AirTag Logo"
+                android:contentDescription="@string/airtag_logo"
                 android:layout_gravity="center"
                 android:background="@drawable/border"
                 android:padding="12dp"/>
@@ -148,7 +152,7 @@
                 android:layout_height="120dp"
                 android:layout_marginEnd="16dp"
                 android:src="@drawable/add_item_logo"
-                android:contentDescription="Add Item Logo"
+                android:contentDescription="@string/add_item_logo"
                 android:layout_gravity="center"
                 android:background="@drawable/border"
                 android:padding="12dp"/>
@@ -159,7 +163,8 @@
                 android:layout_height="wrap_content"
                 android:inputType="text"
                 android:minHeight="48dp"
-                android:text="Find Your Belongings!" />
+                android:text="@string/find_your_belongings"
+                tools:ignore="Autofill" />
         </LinearLayout>
     </HorizontalScrollView>
 
@@ -196,19 +201,19 @@
         android:id="@+id/btn_report_lost"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Report Lost Item"
+        android:text="@string/report_lost_item"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="334dp"
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:layout_width="145dp"
-        android:layout_height="wrap_content"
-        android:text="Recent Alerts"
+        android:layout_width="146dp"
+        android:layout_height="24dp"
+        android:text="@string/recent_alerts"
         android:textSize="16sp"
         android:textStyle="bold"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="143dp"
-        tools:layout_editor_absoluteY="408dp" />
+        tools:layout_editor_absoluteX="142dp"
+        tools:layout_editor_absoluteY="406dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

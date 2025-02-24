@@ -30,7 +30,7 @@ class FirstFragment : Fragment() {
         Handler(Looper.getMainLooper()).postDelayed({
             // Navigate to the sign-up screen after the delay
             findNavController().navigate(R.id.action_firstFragment_to_signupFragment)
-        }, 3000) // 3000ms = 3 seconds
+        }, 9000) // 9000ms = 9secs
     }
 
     override fun onDestroyView() {

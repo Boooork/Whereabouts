@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -21,7 +22,8 @@
             android:text="Forum"
             android:textSize="20sp"
             android:textColor="@android:color/white"
-            android:padding="16dp"/>
+            android:padding="16dp"
+            tools:ignore="HardcodedText" />
     </androidx.appcompat.widget.Toolbar>
 
     <!-- Post Input Section -->
@@ -35,20 +37,24 @@
         <EditText
             android:id="@+id/post_input"
             android:layout_width="0dp"
-            android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:hint="Write something..."
-            android:padding="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
             android:background="@android:color/white"
-            android:layout_marginEnd="8dp"/>
+            android:hint="@string/write_something"
+            android:minHeight="48dp"
+            android:padding="8dp"
+            android:textColorHint="#757575"
+            tools:ignore="Autofill,TextContrastCheck,TextFields" />
 
         <Button
             android:id="@+id/post_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Post"
             android:background="@color/colorPrimary"
-            android:textColor="@android:color/white"/>
+            android:text="@string/post2"
+            android:textColor="@android:color/white"
+            tools:ignore="TouchTargetSizeCheck" />
     </LinearLayout>
 
     <!-- Forum Post List -->
@@ -76,7 +82,7 @@
                     android:id="@+id/user_name"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="John Doe"
+                    android:text="@string/john_doe"
                     android:textSize="16sp"
                     android:textStyle="bold"/>
 
@@ -84,7 +90,7 @@
                     android:id="@+id/post_time"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="2 hours ago"
+                    android:text="@string/_2_hours_ago"
                     android:textSize="12sp"
                     android:textColor="@android:color/darker_gray"/>
 
@@ -92,7 +98,7 @@
                     android:id="@+id/post_content"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus."
+                    android:text="@string/lorem_ipsum_dolor_sit_amet_consectetur_adipiscing_elit_nulla_convallis_egestas_rhoncus"
                     android:textSize="14sp"
                     android:paddingTop="8dp"/>
 
@@ -107,20 +113,22 @@
                         android:id="@+id/like_button"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Like"
-                        android:textSize="12sp"
+                        android:background="@color/colorPrimary"
+                        android:text="@string/like2"
                         android:textColor="@android:color/white"
-                        android:background="@color/colorPrimary"/>
+                        android:textSize="12sp"
+                        tools:ignore="ButtonStyle,DuplicateSpeakableTextCheck" />
 
                     <Button
                         android:id="@+id/comment_button"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Comment"
-                        android:textSize="12sp"
-                        android:textColor="@android:color/white"
+                        android:layout_marginStart="8dp"
                         android:background="@color/colorPrimary"
-                        android:layout_marginStart="8dp"/>
+                        android:text="@string/comment2"
+                        android:textColor="@android:color/white"
+                        android:textSize="12sp"
+                        tools:ignore="ButtonStyle,DuplicateSpeakableTextCheck,DuplicateSpeakableTextCheck,DuplicateSpeakableTextCheck" />
                 </LinearLayout>
             </LinearLayout>
 
@@ -137,21 +145,22 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Jane Smith"
+                    android:text="@string/jane_smith"
                     android:textSize="16sp"
                     android:textStyle="bold"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="5 hours ago"
+                    android:text="@string/_5_hours_ago"
+                    android:textColor="#757575"
                     android:textSize="12sp"
-                    android:textColor="@android:color/darker_gray"/>
+                    tools:ignore="TextContrastCheck,TextContrastCheck" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae."
+                    android:text="@string/vestibulum_ante_ipsum_primis_in_faucibus_orci_luctus_et_ultrices_posuere_cubilia_curae"
                     android:textSize="14sp"
                     android:paddingTop="8dp"/>
 
@@ -165,19 +174,21 @@
                     <Button
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Like"
+                        android:text="@string/like"
                         android:textSize="12sp"
                         android:textColor="@android:color/white"
-                        android:background="@color/colorPrimary"/>
+                        android:background="@color/colorPrimary"
+                        tools:ignore="ButtonStyle" />
 
                     <Button
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Comment"
+                        android:text="@string/comment"
                         android:textSize="12sp"
                         android:textColor="@android:color/white"
                         android:background="@color/colorPrimary"
-                        android:layout_marginStart="8dp"/>
+                        android:layout_marginStart="8dp"
+                        tools:ignore="ButtonStyle" />
                 </LinearLayout>
             </LinearLayout>
 

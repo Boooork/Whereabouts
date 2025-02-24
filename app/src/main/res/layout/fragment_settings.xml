@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp"
@@ -23,7 +24,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Settings"
+                android:text="@string/settings"
                 android:textSize="20sp"
                 android:textColor="@android:color/white"
                 android:padding="16dp" />
@@ -79,7 +80,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Privacy &amp; Security"
+            android:text="@string/privacy_amp_security"
             android:textSize="16sp"
             android:textStyle="bold"
             android:layout_marginBottom="8dp"/>
@@ -90,8 +91,9 @@
             android:layout_height="wrap_content"
             android:minHeight="48dp"
             android:gravity="center_vertical"
-            android:text="Share Location"
-            android:checked="true"/>
+            android:text="@string/share_location"
+            android:checked="true"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
 
         <Switch
             android:id="@+id/enable_2fa"
@@ -99,8 +101,9 @@
             android:layout_height="wrap_content"
             android:minHeight="48dp"
             android:gravity="center_vertical"
-            android:text="Enable Two-Factor Authentication"
-            android:checked="false"/>
+            android:text="@string/enable_two_factor_authentication"
+            android:checked="false"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
 
         <TextView
             android:id="@+id/manage_blocked_users"
@@ -108,14 +111,14 @@
             android:layout_height="wrap_content"
             android:minHeight="48dp"
             android:gravity="center_vertical"
-            android:text="Manage Blocked Users"
+            android:text="@string/manage_blocked_users"
             android:padding="8dp"
             android:background="?attr/selectableItemBackground"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Notifications"
+            android:text="@string/notifications"
             android:textSize="16sp"
             android:textStyle="bold"
             android:layout_marginTop="16dp"
@@ -164,7 +167,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:minHeight="48dp"
-            android:text="Logout"
+            android:text="@string/logout"
             android:textColor="@android:color/white"
             android:layout_marginTop="16dp"/>
 
@@ -174,7 +177,7 @@
             android:layout_height="wrap_content"
             android:minHeight="48dp"
             android:gravity="center"
-            android:text="Delete Account"
+            android:text="@string/delete_account"
             android:textColor="@android:color/holo_red_dark"
             android:padding="8dp"
             android:background="?attr/selectableItemBackground"/>

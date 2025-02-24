@@ -4,20 +4,19 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.fragment.app.Fragment
-import androidx.navigation.fragment.findNavController
-import com.example.myapplication.databinding.FragmentSigninBinding
+import com.example.myapplication.databinding.FragmentSignupBinding
 
-class SecondFragment : Fragment() {
-    private var _binding: FragmentSigninBinding? = null
+class SignUpFragment : Fragment() {
+    private var _binding: FragmentSignupBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        _binding = FragmentSigninBinding.inflate(inflater, container, false)
+        // Inflate the layout for this fragment
+        _binding = FragmentSignupBinding.inflate(inflater, container, false)
         return binding.root
     }
 
@@ -26,4 +25,3 @@ class SecondFragment : Fragment() {
         _binding = null
     }
 }
-

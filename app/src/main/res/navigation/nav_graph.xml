@@ -10,23 +10,10 @@
         android:name="com.example.myapplication.FirstFragment"
         android:label="First Fragment"
         tools:layout="@layout/fragment_first">
-        <action
-            android:id="@+id/action_firstFragment_to_signinFragment"
-            app:destination="@id/signinFragment"/>
+        <!-- Navigate to Sign Up Fragment after splash screen (can be manual or delayed) -->
         <action
             android:id="@+id/action_firstFragment_to_signupFragment"
-            app:destination="@id/signupFragment"/>
-    </fragment>
-
-    <!-- Sign In Fragment -->
-    <fragment
-        android:id="@+id/signinFragment"
-        android:name="com.example.myapplication.SecondFragment"
-        android:label="Sign In"
-        tools:layout="@layout/fragment_signin">
-        <action
-            android:id="@+id/action_signinFragment_to_tutorialFragment"
-            app:destination="@id/tutorialFragment"/>
+        app:destination="@id/signupFragment"/>
     </fragment>
 
     <!-- Sign Up Fragment -->
@@ -35,57 +22,5 @@
         android:name="com.example.myapplication.SignUpFragment"
         android:label="Sign Up"
         tools:layout="@layout/fragment_signup">
-        <action
-            android:id="@+id/action_signupFragment_to_tutorialFragment"
-            app:destination="@id/tutorialFragment"/>
     </fragment>
-
-    <!-- Tutorial Fragment -->
-    <fragment
-        android:id="@+id/tutorialFragment"
-        android:name="com.example.myapplication.TutorialFragment"
-        android:label="Tutorial"
-        tools:layout="@layout/fragment_tutorial">
-        <action
-            android:id="@+id/action_tutorialFragment_to_homeActivity"
-            app:destination="@id/homeActivity"/>
-    </fragment>
-
-    <!-- Home Activity -->
-    <activity
-        android:id="@+id/homeActivity"
-        android:name="com.example.myapplication.HomeActivity"
-        android:label="Home"
-        tools:layout="@layout/activity_home">
-        <action
-            android:id="@+id/action_homeActivity_to_forumFragment"
-            app:destination="@id/forumFragment"/>
-        <action
-            android:id="@+id/action_homeActivity_to_settingsFragment"
-            app:destination="@id/settingsFragment"/>
-        <action
-            android:id="@+id/action_homeActivity_to_mapsActivity"
-            app:destination="@id/mapsActivity"/>
-    </activity>
-
-    <!-- Forum Fragment -->
-    <fragment
-        android:id="@+id/forumFragment"
-        android:name="com.example.myapplication.ForumFragment"
-        android:label="Forum"
-        tools:layout="@layout/fragment_forum"/>
-
-    <!-- Settings Fragment -->
-    <fragment
-        android:id="@+id/settingsFragment"
-        android:name="com.example.myapplication.SettingsFragment"
-        android:label="Settings"
-        tools:layout="@layout/fragment_settings"/>
-
-    <!-- Maps Activity -->
-    <activity
-        android:id="@+id/mapsActivity"
-        android:name="com.example.myapplication.MapsActivity"
-        android:label="Maps"
-        tools:layout="@layout/activity_maps"/>
 </navigation>

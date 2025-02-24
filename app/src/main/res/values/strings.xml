@@ -45,4 +45,8 @@
     </string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="back_to_home">back_to_home</string>
+    <string name="whereabouts" />
+    <string name="welcome_user" />
+    <string name="search_items" />
 </resources>
