@@ -29,7 +29,7 @@ class HomeActivity : AppCompatActivity(R.layout.activity_home) {
         findViewById<View>(R.id.btnSignOut).setOnClickListener {
             // Log out and go to the Login screen
             startActivity(Intent(this, LoginActivity::class.java))
-            finish() // Close HomeActivity so the user can't go back to it
+            finish()  // Close HomeActivity so the user can't go back to it
         }
     }
 }
