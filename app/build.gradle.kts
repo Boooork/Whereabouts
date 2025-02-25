@@ -1,11 +1,10 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
-    alias(libs.plugins.google.gms.google.services)
-
 }
 
 android {
+
     namespace = "com.example.myapplication"
     compileSdk = 35
 
@@ -26,15 +25,16 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_11
-        targetCompatibility = JavaVersion.VERSION_11
+        sourceCompatibility = JavaVersion.VERSION_11 //FROM 11 TO 17
+        targetCompatibility = JavaVersion.VERSION_11 //FROM 11 TO 17
     }
     kotlinOptions {
-        jvmTarget = "11"
+        jvmTarget = "11" //FROM 11 TO 17
     }
     buildFeatures {
         viewBinding = true
     }
+
 }
 
 dependencies {
@@ -48,29 +48,9 @@ dependencies {
     implementation(libs.androidx.activity)
 
 
-    // Import the BoM for the Firebase platform
-   // implementation(libs.firebase.auth)
-
-// Import the BoM for the Firebase platform
-    implementation(platform(libs.firebase.bom))
-
-    // Add the dependency for the Firebase Authentication library
-    // When using the BoM, you don't specify versions in Firebase library dependencies
-    implementation(libs.com.google.firebase.firebase.auth)
 
 
 
 
-    testImplementation(libs.junit)
-    androidTestImplementation(libs.androidx.junit)
-    androidTestImplementation(libs.androidx.espresso.core)
-
-
-
-                     //IF ANY LINKING ERRORS OCCUR, CHECK THIS IMP.
-    //implementation(libs.kotlinx.coroutines.play.services)
-
-    //implementation(libs.kotlinx.coroutines.core)
-    //implementation(libs.kotlinx.corounties.android)
 
 }

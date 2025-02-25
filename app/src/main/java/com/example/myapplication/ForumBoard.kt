@@ -13,7 +13,7 @@ import com.example.myapplication.databinding.ActivityForumBoardBinding
 class ForumBoard : AppCompatActivity() {
 
 private lateinit var binding: ActivityForumBoardBinding
-//lateinit var textInput : EditText
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -24,10 +24,12 @@ private lateinit var binding: ActivityForumBoardBinding
       val backButton = findViewById<Button>(R.id.backButton)
       val trashButton = findViewById<Button>(R.id.deletePostButton)
 
-//textInput = findViewById(R.id.editText)
+
 
      addButton.setOnClickListener {
 
+        val addIntent = Intent(this, ForumDoc::class.java)
+         startActivity(addIntent)
       }
 
      backButton.setOnClickListener {
