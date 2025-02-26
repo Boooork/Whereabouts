@@ -49,6 +49,7 @@ dependencies {
     implementation(libs.androidx.navigation.fragment.ktx)
     implementation(libs.androidx.navigation.ui.ktx)
     implementation(libs.androidx.activity)
+    implementation(libs.play.services.maps)
     // implementation(libs.androidx.annotation)
    // implementation(libs.androidx.lifecycle.livedata.ktx)
    // implementation(libs.androidx.lifecycle.viewmodel.ktx)
@@ -58,4 +59,6 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
     implementation("androidx.navigation:navigation-fragment-ktx:2.7.6")
     implementation("androidx.navigation:navigation-ui-ktx:2.7.6")
+    implementation("org.osmdroid:osmdroid-android:6.1.11")
+
 }
