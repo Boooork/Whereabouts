@@ -29,7 +29,7 @@ class FirstFragment : Fragment() {
         // Use a Handler to delay navigation for 2-3 seconds
         Handler(Looper.getMainLooper()).postDelayed({
             // Navigate to the sign-up screen after the delay
-            findNavController().navigate(R.id.action_firstFragment_to_signupFragment)
+            findNavController().navigate(R.id.action_firstFragment_to_fragment_tutorial)
         }, 9000) // 9000ms = 9secs
     }
 

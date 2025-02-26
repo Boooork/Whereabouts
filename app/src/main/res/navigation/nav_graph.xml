@@ -10,17 +10,18 @@
         android:name="com.example.myapplication.FirstFragment"
         android:label="First Fragment"
         tools:layout="@layout/fragment_first">
-        <!-- Navigate to Sign Up Fragment after splash screen (can be manual or delayed) -->
+
+        <!-- Navigate to Tutorial Fragment after splash screen -->
         <action
-            android:id="@+id/action_firstFragment_to_signupFragment"
-        app:destination="@id/signupFragment"/>
+            android:id="@+id/action_firstFragment_to_fragment_tutorial"
+            app:destination="@id/fragment_tutorial"/>
     </fragment>
 
-    <!-- Sign Up Fragment -->
+    <!-- Tutorial Fragment -->
     <fragment
-        android:id="@+id/signupFragment"
-        android:name="com.example.myapplication.SignUpFragment"
-        android:label="Sign Up"
-        tools:layout="@layout/fragment_signup">
-    </fragment>
+        android:id="@+id/fragment_tutorial"
+        android:name="com.example.myapplication.fragment_tutorial"
+        android:label="Tutorial Fragment"
+        tools:layout="@layout/fragment_tutorial"/>
+
 </navigation>
