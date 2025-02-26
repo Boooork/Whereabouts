@@ -14,10 +14,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="35" >
+
         <activity
             android:name=".ForumBoard"
             android:exported="false"
-            android:label="@string/title_activity_forum_board"
+            android:theme="@style/Theme.MyApplication.NoActionBar" />
+        <activity
+            android:name=".ForumDoc"
+            android:exported="false"
+            android:theme="@style/Theme.MyApplication.NoActionBar" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false"
             android:theme="@style/Theme.MyApplication.NoActionBar" />
         <activity
             android:name=".SignInActivity"

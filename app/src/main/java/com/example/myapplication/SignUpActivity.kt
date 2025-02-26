@@ -3,9 +3,8 @@ package com.example.myapplication
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
-import androidx.appcompat.app.AppCompatActivity
 import android.widget.TextView
-
+import androidx.appcompat.app.AppCompatActivity
 
 
 class SignUpActivity : AppCompatActivity() {
@@ -16,7 +15,7 @@ class SignUpActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.fragment_signup)
 
-        //auth = Firebase.auth
+
 
         val signUptoIn = findViewById<TextView>(R.id.signInRedirect)
         signUptoIn.setOnClickListener{
@@ -26,8 +25,9 @@ class SignUpActivity : AppCompatActivity() {
 
         val clickSignUp = findViewById<Button>(R.id.signUpButton)
         clickSignUp.setOnClickListener{
-            val intent = Intent(this, ForumBoard::class.java)
+            val intent = Intent(this, HomeActivity::class.java)
             startActivity(intent)
+           // startActivity(Intent(this, HomeActivity::class.java))
         }
 
     }

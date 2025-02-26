@@ -3,8 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ui.home.com.example.myapplication.ui.login.HomeFragment">
+    android:layout_height="match_parent">
 
     <!-- Top Navigation Bar -->
     <LinearLayout
@@ -43,6 +42,7 @@
     <!-- Devices Images Container with Scroll View -->
 
     <com.google.android.material.tabs.TabLayout
+
         android:id="@+id/tab_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -52,28 +52,28 @@
         tools:layout_editor_absoluteX="0dp">
 
         <com.google.android.material.tabs.TabItem
-            android:id="@+id/tab_devices"
+
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Devices" />
 
         <com.google.android.material.tabs.TabItem
-            android:id="@+id/tab_items"
+
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Items" />
+            android:text="Discussions" />
 
         <com.google.android.material.tabs.TabItem
-            android:id="@+id/tab_vehicles"
+
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Vehicles" />
+            android:text="Maps" />
 
         <com.google.android.material.tabs.TabItem
-            android:id="@+id/tab_other"
+
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Other" />
+            android:text="Settings" />
     </com.google.android.material.tabs.TabLayout>
 
     <HorizontalScrollView
@@ -210,5 +210,41 @@
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="143dp"
         tools:layout_editor_absoluteY="408dp" />
+
+    <Button
+        android:id="@+id/devicesButton"
+        android:layout_width="71dp"
+        android:layout_height="48dp"
+        android:textColorHighlight="#00000000"
+        tools:layout_editor_absoluteX="19dp"
+        tools:layout_editor_absoluteY="90dp"
+        tools:visibility="invisible" />
+
+    <Button
+        android:id="@+id/discussionsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        tools:layout_editor_absoluteX="109dp"
+        tools:layout_editor_absoluteY="89dp"
+        tools:visibility="invisible" />
+
+    <Button
+        android:id="@+id/mapsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        tools:layout_editor_absoluteX="213dp"
+        tools:layout_editor_absoluteY="89dp"
+        tools:visibility="invisible" />
+
+    <Button
+        android:id="@+id/settingsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="315dp"
+        tools:layout_editor_absoluteY="89dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

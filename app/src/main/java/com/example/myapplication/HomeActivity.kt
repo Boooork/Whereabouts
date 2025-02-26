@@ -1,35 +1,44 @@
-package com.example.myapplication.ui.home
-
+package com.example.myapplication
 import android.content.Intent
 import android.os.Bundle
-import android.view.View
+import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
-import com.example.myapplication.R
-import com.example.myapplication.ui.forum.ForumActivity
-import com.example.myapplication.ui.login.LoginActivity
-import com.example.myapplication.ui.settings.SettingsActivity
+import com.example.myapplication.databinding.ActivityHomeBinding
+import com.example.myapplication.fragments.SettingsFragment
 
-class HomeActivity : AppCompatActivity(R.layout.activity_home) {
+
+class HomeActivity : AppCompatActivity() {
+
+
+    private lateinit var binding: ActivityHomeBinding
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+        binding = ActivityHomeBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
         // Set up the listeners for button clicks
-        findViewById<View>(R.id.btnForum).setOnClickListener {
-            // Navigate to the Forum activity
-            startActivity(Intent(this, ForumActivity::class.java))
+        findViewById<Button>(R.id.devicesButton).setOnClickListener {
+           // startActivity(Intent(this, ForumActivity::class.java))
         }
 
-        findViewById<View>(R.id.btnSettings).setOnClickListener {
-            // Navigate to the Settings activity
-            startActivity(Intent(this, SettingsActivity::class.java))
+        findViewById<Button>(R.id.discussionsButton).setOnClickListener {
+            startActivity(Intent(this, ForumBoard::class.java))
+
         }
 
 
-        findViewById<View>(R.id.btnSignOut).setOnClickListener {
+        findViewById<Button>(R.id.mapsButton).setOnClickListener {
             // Log out and go to the Login screen
-            startActivity(Intent(this, LoginActivity::class.java))
-            finish()  // Close HomeActivity so the user can't go back to it
+            //startActivity(Intent(this, LoginActivity::class.java))
+            //finish()  // Close com.example.myapplication.HomeActivity so the user can't go back to it
         }
+        findViewById<Button>(R.id.settingsButton).setOnClickListener {
+            startActivity(Intent(this, SettingsFragment::class.java))
+
+        }
+
     }
 }
