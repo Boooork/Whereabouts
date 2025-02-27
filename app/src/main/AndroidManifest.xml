@@ -35,6 +35,9 @@
             android:exported="true"
             android:theme="@style/Theme.MyApplication" />
 
+        <activity android:name=".HomeActivity" />
+
+
     </application>
 
 </manifest>

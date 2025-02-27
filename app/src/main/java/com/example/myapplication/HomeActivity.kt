@@ -1,32 +1,11 @@
-package com.example.myapplication.ui.home
+package com.example.myapplication
 
-import android.content.Intent
-import android.view.View
+import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.example.myapplication.R
-// com.example.myapplication.ui.login.LoginActivity
-//import com.example.myapplication.ui.settings.SettingsActivity
 
-class HomeActivity : AppCompatActivity(R.layout.activity_home) {
-
-   // override fun onCreate(savedInstanceState: Bundle?) {
-      //  super.onCreate(savedInstanceState)
-
-        // Set up the listeners for button clicks
-       // findViewById<View>(R.id.btnForum).setOnClickListener {
-       //     startActivity(Intent(this, ForumActivity::class.java))
-       // }
-
-        //findViewById<View>(R.id.btnSettings).setOnClickListener {
-       //     // Navigate to the Settings activity
-       //     startActivity(Intent(this, SettingsActivity::class.java))
-       // }
-
-
-       // findViewById<View>(R.id.btnSignOut).setOnClickListener {
-       //     // Log out and go to the Login screen
-      //      startActivity(Intent(this, LoginActivity::class.java))
-       //     finish() // Close HomeActivity so the user can't go back to it
-       // }
-  //  }
+class HomeActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_home) // Make sure this is correct
+    }
 }

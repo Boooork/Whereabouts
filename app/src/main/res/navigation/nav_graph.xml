@@ -11,7 +11,7 @@
         android:label="First Fragment"
         tools:layout="@layout/fragment_first">
 
-        <!-- Navigate to Tutorial Fragment after splash screen -->
+        <!-- Navigate to Tutorial Fragment -->
         <action
             android:id="@+id/action_firstFragment_to_fragment_tutorial"
             app:destination="@id/fragment_tutorial"/>
@@ -50,10 +50,9 @@
         android:label="Sign In Fragment"
         tools:layout="@layout/fragment_signin">
 
-        <!-- Navigate back to SignUp Fragment -->
+        <!-- Navigate to SignUp Fragment -->
         <action
             android:id="@+id/action_fragment_signin_to_fragment_signup"
             app:destination="@id/fragment_signup"/>
     </fragment>
-
 </navigation>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/message_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Write your post here..."
+        android:minHeight="100dp"
+        android:padding="12dp"
+        android:background="@android:color/white"
+        android:textColor="#757575"
+        android:textColorHint="#757575"
+        android:inputType="textMultiLine"
+        android:gravity="top|start"/>
+
+    <Button
+        android:id="@+id/post_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Post"
+        android:layout_gravity="end"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:padding="10dp"/>
+</LinearLayout>
