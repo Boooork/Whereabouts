@@ -136,12 +136,16 @@
 
     <!-- Sign In Redirect -->
     <TextView
-            android:id="@+id/signInRedirect"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Already have an account? Click here to sign in!"
-            android:textColor="#0066CC"
-            android:gravity="center"
-            android:textSize="16sp"
-            android:layout_marginTop="24dp"/>
+        android:id="@+id/tvSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already have an account? Click here to sign in!"
+        android:textColor="#0066CC"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        android:focusable="true"/>
+
 </LinearLayout>

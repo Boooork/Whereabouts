@@ -22,6 +22,38 @@
         android:id="@+id/fragment_tutorial"
         android:name="com.example.myapplication.fragment_tutorial"
         android:label="Tutorial Fragment"
-        tools:layout="@layout/fragment_tutorial"/>
+        tools:layout="@layout/fragment_tutorial">
+
+        <!-- Navigate to SignUp Fragment -->
+        <action
+            android:id="@+id/action_fragment_tutorial_to_fragment_signup"
+            app:destination="@id/fragment_signup"/>
+    </fragment>
+
+    <!-- SignUp Fragment -->
+    <fragment
+        android:id="@+id/fragment_signup"
+        android:name="com.example.myapplication.FragmentSignup"
+        android:label="Sign Up Fragment"
+        tools:layout="@layout/fragment_signup">
+
+        <!-- Navigate to SignIn Fragment -->
+        <action
+            android:id="@+id/action_fragment_signup_to_fragment_signin"
+            app:destination="@id/fragment_signin"/>
+    </fragment>
+
+    <!-- SignIn Fragment -->
+    <fragment
+        android:id="@+id/fragment_signin"
+        android:name="com.example.myapplication.SignInFragment"
+        android:label="Sign In Fragment"
+        tools:layout="@layout/fragment_signin">
+
+        <!-- Navigate back to SignUp Fragment -->
+        <action
+            android:id="@+id/action_fragment_signin_to_fragment_signup"
+            app:destination="@id/fragment_signup"/>
+    </fragment>
 
 </navigation>
